@@ -51,7 +51,8 @@ public class RetrieveFromFile {
         FileInputStream fileInputStream=new FileInputStream(file);
         XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
         XSSFSheet sheet1 =workbook.getSheetAt(0);
-        
+
+
         for (int i = sheet1.getFirstRowNum();i<sheet1.getLastRowNum();i++){
             XSSFRow tempRow = sheet1.getRow(i);
             System.out.print("| ");
